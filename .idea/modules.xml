@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" filepath="$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/parent-fxee-platform.iml" filepath="$PROJECT_DIR$/parent-fxee-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-osgi-extender/fxee-osgi-extender.iml" filepath="$PROJECT_DIR$/fxee-osgi-extender/fxee-osgi-extender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" filepath="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-fxee-dev.iml" filepath="$PROJECT_DIR$/parent-fxee-dev.iml" />
     </modules>
   </component>
 </project>

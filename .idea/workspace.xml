@@ -1,15 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09802a43-9b54-4bd8-adde-10dc8a4f52e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-karaf-features/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-karaf-features/src/main/resources/gemini-blueprint-features.xml" afterDir="false" />
+    <list default="true" id="d8ac01ff-ea8a-469e-8f99-945bd0d6cc59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_felix_org_apache_felix_configadmin_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_felix_org_apache_felix_fileinstall_3_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_felix_org_apache_felix_framework_5_6_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_felix_org_apache_felix_utils_1_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jaxws_2_2_spec_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_saaj_1_3_spec_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_stax_api_1_2_spec_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_diagnostic_org_apache_karaf_diagnostic_boot_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_features_base_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_features_org_apache_karaf_features_core_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_features_org_apache_karaf_features_extension_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_jaas_org_apache_karaf_jaas_boot_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_org_apache_karaf_client_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_org_apache_karaf_main_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_org_apache_karaf_util_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_specs_org_apache_karaf_specs_activator_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_specs_org_apache_karaf_specs_java_xml_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_specs_org_apache_karaf_specs_java_xml_ws_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_karaf_specs_org_apache_karaf_specs_locator_4_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_aspects_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_beans_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_context_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_core_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_test_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_web_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_servicemix_bundles_org_apache_servicemix_bundles_spring_webmvc_5_0_8_RELEASE_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_platform_org_eclipse_osgi_3_12_100.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_migrationsupport_5_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_runner_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_2_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_base_ops4j_base_lang_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_base_ops4j_base_util_collections_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_base_ops4j_base_util_property_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_logging_pax_logging_api_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_logging_pax_logging_log4j2_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_swissbox_pax_swissbox_core_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_swissbox_pax_swissbox_lifecycle_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_swissbox_pax_swissbox_optional_jcl_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_swissbox_pax_swissbox_property_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_url_pax_url_aether_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_url_pax_url_aether_support_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_web_pax_web_api_7_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ops4j_pax_web_pax_web_extender_whiteboard_7_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_osgi_org_osgi_compendium_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_osgi_org_osgi_core_6_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_mockito2_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_support_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_core_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_reflect_2_0_0_RC_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-extender/fxee-osgi-extender.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-extender/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/annotations/ExposeAsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/annotations/ExtensionImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/bundle/OsgiComponentBeanFactoryPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/context/OsgiAnnotationWebApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/controllers/ModuleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent-fxee-dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-karaf-features/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-karaf-features/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-test-module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent-fxee-platform.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/fxee-test-module/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-osgi-extender/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/fxee-karaf-features/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,62 +117,75 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="77218826">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="xml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="xml" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="XML" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fxee-karaf-features/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/fxee-test-module/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fxee-karaf-features/src/main/resources/gemini-blueprint-features.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/controllers/ModuleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;version&gt;5.0.8.RELEASE_1&lt;/version&gt;</find>
+      <find>ModuleVon</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;version&gt;${spring.version}&lt;/version&gt;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,19 +193,40 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/pom.xml" />
         <option value="$PROJECT_DIR$/fxee-karaf-features/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-karaf-features/src/main/resources/gemini-blueprint-features.xml" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/extender/annotations/ExtensionImport.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/extender/annotations/ExposeAsService.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/annotations/ExposeAsService.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/bundle/OsgiExtensionBeanFactoryPostProcessor.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/bundle/OsgiComponentBeanFactoryPostProcessor.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/target/classes/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/context/OsgiAnnotationWebApplicationContext.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/context/OsgiClassPathBeanDefinitionScanner.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" />
+        <option value="$PROJECT_DIR$/parent-fxee-platform.iml" />
+        <option value="$PROJECT_DIR$/fxee-platform-dev.iml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/StringUtils.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/OsgiClassUtils.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/test/java/org/fxee/test/OsgiClassUtilsTest.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleWeavingHook.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleWovenClassListener.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/controllers/ModuleController.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleConfiguration.java" />
+        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="42" />
-    <option name="width" value="1920" />
-    <option name="height" value="1136" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -101,31 +235,72 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="parent-fxee-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent-fxee-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parent-fxee-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent-fxee-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-karaf-features" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parent-fxee-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent-fxee-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-karaf-features" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parent-fxee-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent-fxee-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-karaf-features" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,10 +309,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540584282420" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541573573974" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.fxee.test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,74 +344,474 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Remote.Karaf Remote Debug">
+    <configuration name="OsgiClassUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxee-test-module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.fxee.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.fxee.test" />
+      <option name="MAIN_CLASS_NAME" value="org.fxee.test.OsgiClassUtilsTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Karaf Remote Debug" type="Remote">
+      <module name="fxee-test-module" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="js.build_tools.grunt" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Grunt.js.Unnamed" />
+      <item itemvalue="JUnit.OsgiClassUtilsTest" />
+      <item itemvalue="Remote.Karaf Remote Debug" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OsgiClassUtilsTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09802a43-9b54-4bd8-adde-10dc8a4f52e3" name="Default Changelist" comment="" />
-      <created>1540583267782</created>
+      <changelist id="d8ac01ff-ea8a-469e-8f99-945bd0d6cc59" name="Default Changelist" comment="" />
+      <created>1540587104240</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1540583267782</updated>
+      <updated>1540587104240</updated>
+      <workItem from="1540587107802" duration="70152000" />
+      <workItem from="1541333967306" duration="12472000" />
+      <workItem from="1541403622730" duration="77000" />
+      <workItem from="1541403771117" duration="5217000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 16m 45s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 17m 20s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 18m 58s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 19m 03s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 23m 19s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 23m 23s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 25m 14s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 26m 05s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 27m 06s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OsgiClassUtilsTest - 2018.11.04 at 12h 27m 56s.xml">
+      <configuration name="OsgiClassUtilsTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87918000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1173" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973261" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30445343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32997987" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5888031" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32865733" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24939272" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Spring" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleConfiguration.java</url>
+          <line>7</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/annotations/ExtensionImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/annotations/ExposeAsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fxee-karaf-features/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-karaf-features/src/main/resources/gemini-blueprint-features.xml">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-extender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-extender/src/main/java/org/fxee/osgi/bundle/OsgiComponentBeanFactoryPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-platform-dev.iml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/context/OsgiClassPathBeanDefinitionScanner.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/target/classes/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/StringUtils.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.fileinstall/3.6.4/org.apache.felix.fileinstall-3.6.4.jar!/org/apache/felix/fileinstall/internal/DirectoryWatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3841">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/5.6.10/org.apache.felix.framework-5.6.10.jar!/org/apache/felix/framework/BundleImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="636" selection-start-line="636" selection-end-line="636" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/5.6.10/org.apache.felix.framework-5.6.10.jar!/org/apache/felix/framework/Felix.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1004" column="9" selection-start-line="1004" selection-start-column="9" selection-end-line="1004" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/5.6.10/org.apache.felix.framework-5.6.10.jar!/org/apache/felix/framework/BundleWiringImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="1038" selection-start-line="1038" selection-end-line="1038" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/5.6.10/org.apache.felix.framework-5.6.10.jar!/org/apache/felix/framework/util/SecureAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleWovenClassListener.java" />
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleWeavingHook.java" />
+    <entry file="file://$PROJECT_DIR$/parent-fxee-dev.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-beans/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-beans-5.0.8.RELEASE_1.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/OsgiClassUtils.java" />
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/test/java/org/fxee/test/OsgiClassUtilsTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/5.6.10/org.apache.felix.framework-5.6.10.jar!/org/apache/felix/framework/BundleContextImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-beans/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-beans-5.0.8.RELEASE_1.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-beans/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-beans-5.0.8.RELEASE_1.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3961">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-beans/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-beans-5.0.8.RELEASE_1.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-beans/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-beans-5.0.8.RELEASE_1.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1585">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/context/OsgiAnnotationWebApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/controllers/ModuleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>OSGi</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -242,9 +835,21 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>fxee-test-module</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.5</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -256,6 +861,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.sun.xml.bind:jaxb-core:2.2.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

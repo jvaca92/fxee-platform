@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fxee-karaf-features" />
+        <module name="fxee-osgi-extender" />
+        <module name="fxee-test-module" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fxee-karaf-features" target="1.5" />
+      <module name="fxee-karaf-features" target="1.8" />
+      <module name="fxee-osgi-extender" target="1.8" />
+      <module name="fxee-test-module" target="1.8" />
+      <module name="parent-fxee-dev" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
