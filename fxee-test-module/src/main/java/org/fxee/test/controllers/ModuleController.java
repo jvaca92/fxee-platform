@@ -2,13 +2,12 @@ package org.fxee.test.controllers;
 
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class ModuleController {
 
-    @GetMapping(path = "/message")
+    @RequestMapping(path= "/message", method = RequestMethod.GET)
     public String printModuleTestMessage() {
         return "Hello there";
     }

@@ -2,38 +2,27 @@ package org.fxee.test;
 
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ScanResult;
-import org.ops4j.pax.web.extender.whiteboard.ExtenderConstants;
-import org.ops4j.pax.web.extender.whiteboard.runtime.DefaultHttpContextMapping;
-import org.ops4j.pax.web.extender.whiteboard.runtime.DefaultListenerMapping;
-import org.ops4j.pax.web.service.whiteboard.HttpContextMapping;
-import org.ops4j.pax.web.service.whiteboard.ListenerMapping;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
-import org.osgi.framework.hooks.weaving.WeavingHook;
-import org.osgi.framework.hooks.weaving.WovenClassListener;
-import org.osgi.service.http.HttpContext;
 import org.osgi.service.http.HttpService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
-import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.servlet.Servlet;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Set;
 
 public class ModuleBundleActivator implements BundleActivator {
 
     private static final Logger  LOG = LoggerFactory.getLogger(ModuleBundleActivator.class);
 
     private HttpService httpService;
+    private AnnotationConfigWebApplicationContext webApplicationContext;
     Set<Class> candiateComponents = new HashSet<Class>();
     String basePackage = "org.fxee.test";
 
@@ -53,11 +42,11 @@ public class ModuleBundleActivator implements BundleActivator {
                 .getStandardClasses()
                 .loadClasses()
                 .stream()
-                .filter(clazz -> clazz.isAnnotationPresent(Component.class) ||
-                        clazz.isAnnotationPresent(Service.class) ||
-                        clazz.isAnnotationPresent(Repository.class) ||
-                        clazz.isAnnotationPresent(Controller.class) ||
-                        clazz.isAnnotationPresent(Configuration.class))
+//                .filter(clazz -> clazz.isAnnotationPresent(Component.class) ||
+//                        clazz.isAnnotationPresent(Service.class) ||
+//                        clazz.isAnnotationPresent(Repository.class) ||
+//                        clazz.isAnnotationPresent(Controller.class) ||
+//                        clazz.isAnnotationPresent(Configuration.class))
                 .forEach( clazz -> {
                     candiateComponents.add(clazz);
                     LOG.info("Was scanned clazz with name {}", clazz.getName());
@@ -73,10 +62,7 @@ public class ModuleBundleActivator implements BundleActivator {
 //            LOG.info("The resource URL: {}", resource.getURL().toExternalForm());
 //            LOG.info("The resource file absolute path: {}", resource.getFile().getAbsolutePath());
 //        }
-
-          WebApplicationContext applicationContext = createWebApplicationContext(candiateComponents);
-
-          httpService.
+          WebApplicationContext applicationContext = getOrCreateWebApplicationContext(candiateComponents);
           // this is to register the controller
           httpService.registerServlet("/test/*",  createServlet(applicationContext), new Hashtable(), null);
 
@@ -110,24 +96,30 @@ public class ModuleBundleActivator implements BundleActivator {
     }
 
     public void stop(BundleContext bundleContext) throws Exception {
-        httpService.unregister("/test");
+
+        httpService.unregister("/test/*");
         LOG.debug("Dispatcher servlet successfully unregistered");
+        webApplicationContext.stop();
+        LOG.debug("Web application context was successfullu closed");
     }
 
     protected Servlet createServlet(WebApplicationContext applicationContext) {
-        DispatcherServlet dispatcherServlet =  new DispatcherServlet(applicationContext);
+        DispatcherServlet dispatcherServlet =  new DispatcherServlet();
+        dispatcherServlet.setApplicationContext(applicationContext);
+        dispatcherServlet.refresh();
         return dispatcherServlet;
     }
 
-    protected WebApplicationContext createWebApplicationContext(Set<Class> candiateComponents) {
-        AnnotationConfigWebApplicationContext configWebApplicationContext = new AnnotationConfigWebApplicationContext();
-        configWebApplicationContext.setClassLoader(this.getClass().getClassLoader());
-        configWebApplicationContext.registerShutdownHook();
+    protected WebApplicationContext getOrCreateWebApplicationContext(Set<Class> candiateComponents) {
+        if(webApplicationContext == null) {
+            webApplicationContext = new AnnotationConfigWebApplicationContext();
+        }
+        webApplicationContext.setClassLoader(this.getClass().getClassLoader());
         //Register component candidates
-        candiateComponents.forEach(candiateComponent -> configWebApplicationContext.register(candiateComponent));
-        configWebApplicationContext.refresh();
-        configWebApplicationContext.start();
+        candiateComponents.forEach(candiateComponent -> webApplicationContext.register(candiateComponent));
+        webApplicationContext.refresh();
+        webApplicationContext.start();
 
-        return configWebApplicationContext;
+        return webApplicationContext;
     }
 }

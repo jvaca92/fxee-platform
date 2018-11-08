@@ -22,6 +22,16 @@
             <version>4.4.12</version>
             <scope>compile</scope>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-undertow</artifactId>-->
+            <!--<version>2.1.0.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot</artifactId>-->
+            <!--<version>2.1.0.RELEASE</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
@@ -40,13 +50,14 @@
                             org.fxee.test,
                             org.fxee.test.controllers
                         </Export-Package>
+                        <!-- Hide imports -->
+                        <!--org.ops4j.pax.web.extender.whiteboard,-->
                         <Import-Package>
                             org.springframework.beans,
                             org.springframework.cache,
                             org.springframework.beans.factory,
                             org.springframework.cglib.core,
                             org.springframework.cglib.proxy,
-                            org.ops4j.pax.web.extender.whiteboard,
                             org.osgi.framework.hooks.weaving,
                             *
                         </Import-Package>

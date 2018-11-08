@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1541442892544
-Build-Jdk: 1.8.0_152
-Built-By: janva
+Bnd-LastModified: 1541708022465
+Build-Jdk: 1.8.0_181
+Built-By: run
 Bundle-Activator: org.fxee.test.ModuleBundleActivator
 Bundle-ClassPath: .,classgraph-4.4.12.jar,junit-platform-engine-1.2.0.ja
  r,apiguardian-api-1.0.0.jar,junit-platform-commons-1.2.0.jar,opentest4j
@@ -19,23 +19,20 @@ Embedded-Artifacts: classgraph-4.4.12.jar;g="io.github.classgraph";a="cl
  rg.apiguardian";a="apiguardian-api";v="1.0.0",junit-platform-commons-1.
  2.0.jar;g="org.junit.platform";a="junit-platform-commons";v="1.2.0",ope
  ntest4j-1.1.0.jar;g="org.opentest4j";a="opentest4j";v="1.1.0"
-Export-Package: org.fxee.test;version="1.0.0";uses:="javax.servlet,org.o
- sgi.framework,org.springframework.context.annotation,org.springframewor
- k.web.context,org.springframework.web.servlet.config.annotation",org.fx
- ee.test.controllers;version="1.0.0";uses:="org.springframework.stereoty
- pe,org.springframework.web.bind.annotation"
+Export-Package: org.fxee.test;uses:="javax.servlet,org.osgi.framework,or
+ g.springframework.context.annotation,org.springframework.web.context";v
+ ersion="1.0.0",org.fxee.test.controllers;uses:="org.springframework.web
+ .bind.annotation";version="1.0.0"
 Import-Package: javax.lang.model,javax.servlet;version="[3.1,4)",javax.x
  ml.namespace,javax.xml.parsers,javax.xml.xpath,org.osgi.framework;versi
  on="[1.8,2)",org.osgi.service.http;version="[1.2,2)",org.slf4j;version=
- "[1.7,2)",org.springframework.context.annotation;version="[5.0,6)",org.
- springframework.stereotype;version="[5.0,6)",org.springframework.web.bi
- nd.annotation;version="[5.0,6)",org.springframework.web.context;version
- ="[5.0,6)",org.springframework.web.context.support;version="[5.0,6)",or
- g.springframework.web.servlet;version="[5.0,6)",org.springframework.web
- .servlet.config.annotation;version="[5.0,6)",org.w3c.dom,org.springfram
+ "[1.7,2)",org.springframework.context;version="[5.0,6)",org.springframe
+ work.context.annotation;version="[5.0,6)",org.springframework.web.bind.
+ annotation;version="[5.0,6)",org.springframework.web.context;version="[
+ 5.0,6)",org.springframework.web.context.support;version="[5.0,6)",org.s
+ pringframework.web.servlet;version="[5.0,6)",org.w3c.dom,org.springfram
  ework.beans;version="[5.0,6)",org.springframework.cache;version="[5.0,6
  )",org.springframework.beans.factory;version="[5.0,6)",org.springframew
  ork.cglib.core;version="[5.0,6)",org.springframework.cglib.proxy;versio
- n="[5.0,6)",org.ops4j.pax.web.extender.whiteboard;version="[7.2,8)",org
- .osgi.framework.hooks.weaving;version="[1.1,2)"
+ n="[5.0,6)",org.osgi.framework.hooks.weaving;version="[1.1,2)"
 Tool: Bnd-4.0.0.201805111645
