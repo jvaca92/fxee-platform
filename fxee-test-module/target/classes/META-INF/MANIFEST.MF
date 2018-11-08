@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1541708022465
+Bnd-LastModified: 1541710867058
 Build-Jdk: 1.8.0_181
 Built-By: run
 Bundle-Activator: org.fxee.test.ModuleBundleActivator
@@ -26,13 +26,15 @@ Export-Package: org.fxee.test;uses:="javax.servlet,org.osgi.framework,or
 Import-Package: javax.lang.model,javax.servlet;version="[3.1,4)",javax.x
  ml.namespace,javax.xml.parsers,javax.xml.xpath,org.osgi.framework;versi
  on="[1.8,2)",org.osgi.service.http;version="[1.2,2)",org.slf4j;version=
- "[1.7,2)",org.springframework.context;version="[5.0,6)",org.springframe
- work.context.annotation;version="[5.0,6)",org.springframework.web.bind.
- annotation;version="[5.0,6)",org.springframework.web.context;version="[
- 5.0,6)",org.springframework.web.context.support;version="[5.0,6)",org.s
- pringframework.web.servlet;version="[5.0,6)",org.w3c.dom,org.springfram
- ework.beans;version="[5.0,6)",org.springframework.cache;version="[5.0,6
- )",org.springframework.beans.factory;version="[5.0,6)",org.springframew
- ork.cglib.core;version="[5.0,6)",org.springframework.cglib.proxy;versio
- n="[5.0,6)",org.osgi.framework.hooks.weaving;version="[1.1,2)"
+ "[1.7,2)",org.springframework.beans.factory.annotation;version="[5.0,6)
+ ",org.springframework.context;version="[5.0,6)",org.springframework.con
+ text.annotation;version="[5.0,6)",org.springframework.stereotype;versio
+ n="[5.0,6)",org.springframework.web.bind.annotation;version="[5.0,6)",o
+ rg.springframework.web.context;version="[5.0,6)",org.springframework.we
+ b.context.support;version="[5.0,6)",org.springframework.web.servlet;ver
+ sion="[5.0,6)",org.w3c.dom,org.springframework.beans;version="[5.0,6)",
+ org.springframework.cache;version="[5.0,6)",org.springframework.beans.f
+ actory;version="[5.0,6)",org.springframework.cglib.core;version="[5.0,6
+ )",org.springframework.cglib.proxy;version="[5.0,6)",org.osgi.framework
+ .hooks.weaving;version="[1.1,2)"
 Tool: Bnd-4.0.0.201805111645

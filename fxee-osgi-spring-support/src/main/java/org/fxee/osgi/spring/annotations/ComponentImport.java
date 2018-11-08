@@ -1,4 +1,4 @@
-package org.fxee.osgi.annotations;
+package org.fxee.osgi.spring.annotations;
 
 
 import java.lang.annotation.*;
@@ -12,5 +12,5 @@ import java.lang.annotation.Retention;
 @Documented
 @Retention(value= RetentionPolicy.RUNTIME)
 @Target(value= {ElementType.FIELD, ElementType.PARAMETER})
-public @interface ExtensionImport {
+public @interface ComponentImport {
 }

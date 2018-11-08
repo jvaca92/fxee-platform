@@ -28,7 +28,7 @@ public class ModuleBundleActivator implements BundleActivator {
 
     public void start(BundleContext bundleContext) throws Exception {
 
-        LOG.info("Starting bundle with name {}", bundleContext.getBundle().getSymbolicName());
+        LOG.info("Starting processors with name {}", bundleContext.getBundle().getSymbolicName());
 
         ServiceReference ref =  bundleContext.getServiceReference(HttpService.class.getName());
         httpService = (HttpService) bundleContext.getService(ref);

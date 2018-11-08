@@ -1,5 +1,5 @@
 org/fxee/test/context/OsgiAnnotationWebApplicationContext.class
-org/fxee/test/context/OsgiEmbeddedAnnotationWebApplicationContext.class
 org/fxee/test/ModuleConfiguration.class
 org/fxee/test/controllers/ModuleController.class
 org/fxee/test/ModuleBundleActivator.class
+org/fxee/test/services/ModuleService.class

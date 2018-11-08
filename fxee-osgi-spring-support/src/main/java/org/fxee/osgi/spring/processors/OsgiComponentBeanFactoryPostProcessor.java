@@ -1,6 +1,6 @@
-package org.fxee.osgi.bundle;
+package org.fxee.osgi.spring.processors;
 
-import org.fxee.osgi.annotations.ExtensionImport;
+import org.fxee.osgi.spring.annotations.ComponentImport;
 import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
 import org.slf4j.Logger;
@@ -14,7 +14,7 @@ import org.springframework.core.type.StandardMethodMetadata;
 
 /***
  * Post bean factory processor which manage extension instance from registry
- * and assign to variable which are marked by annotation {@link org.fxee.osgi.annotations.ExtensionImport}
+ * and assign to variable which are marked by annotation {@link ComponentImport}
  */
 public class OsgiComponentBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
@@ -36,7 +36,7 @@ public class OsgiComponentBeanFactoryPostProcessor implements BeanFactoryPostPro
             BeanDefinition beanDefinition = beanFactory.getBeanDefinition(beanDefinitionName);
             if (beanDefinition.getSource() instanceof StandardMethodMetadata) {
                 StandardMethodMetadata metadata = (StandardMethodMetadata) (beanDefinition.getSource());
-                if (metadata.isAnnotated(ExtensionImport.class.getCanonicalName())) {
+                if (metadata.isAnnotated(ComponentImport.class.getCanonicalName())) {
                     // 1. remove abstract definition
                     beanFactory.removeBeanDefinition(beanDefinitionName);
                     // 2. get service from osgi

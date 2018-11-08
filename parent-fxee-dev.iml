@@ -89,5 +89,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.objenesis:objenesis:2.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-mockito2:2.0.0-RC.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-api-support:2.0.0-RC.1" level="project" />
+    <orderEntry type="library" name="Maven: io.github.classgraph:classgraph:4.4.12" level="project" />
   </component>
 </module>
