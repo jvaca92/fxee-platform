@@ -2,10 +2,14 @@ package org.fxee.osgi.spring.context;
 
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ScanResult;
+import org.fxee.osgi.spring.annotations.OsgiComponentScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.IntStream;
 
 public class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWebApplicationContext {
@@ -19,29 +23,63 @@ public class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWebA
 
     private int numThreadScan = DEFAULT_NUM_THREAD_SCAN;
 
+    /**
+     * Config module class. Should be annotated by {@see Module }
+     */
+    private Class<?> moduleConfig;
 
+
+    public OsgiAnnotationConfigApplicationContext(Class<?> moduleConfig) {
+        this.moduleConfig = moduleConfig;
+    }
 
     /***
-     * Custom scanning of current classpath and then register matched annotated classes
-     * @param basePackages
+     * Will be taken all defined base packages if exist. If not then will be taken all base packages from config module
+     * class where should be defined base packages by {@see OsgiComponentScan}. If none of them exist then nothing will
+     * be scanned
+     * @param basePackages array of base packages
      */
-    @Override
-    public void scan(String... basePackages) {
-
+    public void scanOsgiBasePackages(String[] basePackages) {
         LOG.debug("Starting scanning base packages");
-        ClassGraph classpathScanner = LOG.isDebugEnabled() ? createDebugClassPathScanner() : createClassPathScanner();
-        if(basePackages.length != 0) {
-            doScan(classpathScanner, basePackages);
-            LOG.debug("All packages were scanned and found classes registered into application context");
-        } else {
-
-            LOG.info("No base packages defined as parameters. Starting scan packages from annotation scanner");
+        if(basePackages!= null && basePackages.length != 0) {
+            doScanOsgiComponent(getClassPathScanner(), basePackages);
+            LOG.debug("All packages were scanned and found classes were registered into application context");
         }
     }
 
-    protected void doScan(ClassGraph classpathScanner, String[] basePackages) {
+    /**
+     *  Will be taken module config class and then extract base packages defined by {@see OsgiComponentScan}
+     *  if exist
+     * @param classpathScanner - classpath scanner
+     */
+    protected void doScanAnnotatedOsgiComponent(ClassGraph classpathScanner) {
+        LOG.debug("Starting scan base pacakges defined by annotation @OsgiComponentScan");
+        if(moduleConfig != null) {
+            if(moduleConfig.isAnnotationPresent(OsgiComponentScan.class)) {
+                LOG.debug("Was found annotation @OsgiComponentScan in module class {}", moduleConfig.getName());
+                OsgiComponentScan osgiComponentScan = moduleConfig.getAnnotation(OsgiComponentScan.class);
+                Collections.addAll(Arrays.asList(osgiComponentScan.basePackages(), osgiComponentScan.basePackage()));   //Join all together
+                if(osgiComponentScan.basePackages().length != 0) {
+                    doScanOsgiComponent(classpathScanner, osgiComponentScan.basePackages());
+                }
+                LOG.debug("Stopping scan base pacakges defined by annotation @OsgiComponentScan");
+            }
+        } else {
+            LOG.error("Module config class is not defined");
+            throw new NullPointerException("Module config class is not defined");
+        }
+
+    }
+
+    /**
+     * Will scann each base package by scanner
+     * @param classpathScanner - classpath scanner
+     * @param basePackages - array of base packages
+     */
+    protected void doScanOsgiComponent(ClassGraph classpathScanner, String[] basePackages) {
         IntStream.range(0, basePackages.length)
                 .forEach(basePackage -> {
+                    LOG.debug("Start scan base package with name {}", basePackage);
                     classpathScanner.whitelistPackages(basePackages)
                             .scan(numThreadScan)
                             .getAllClasses()
@@ -53,20 +91,15 @@ public class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWebA
                                         LOG.debug("The class {} was registered");
                                     }
                             );
+                    LOG.debug("Stop scan base package with name {}", basePackage);
                 });
     }
 
-    protected String[] getOsgiComponentScanPackages() {
-        ///TODO
-    };
 
-
-    public int getNumThreadScan() {
-        return numThreadScan;
-    }
-
-    public void setNumThreadScan(int numThreadScan) {
-        this.numThreadScan = numThreadScan;
+    @Override
+    protected void loadBeanDefinitions(DefaultListableBeanFactory beanFactory) {
+        doScanAnnotatedOsgiComponent(getClassPathScanner());
+        super.loadBeanDefinitions(beanFactory);
     }
 
     /**
@@ -86,9 +119,27 @@ public class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWebA
     protected ClassGraph createDebugClassPathScanner() {
         return new ClassGraph()
                 .verbose()
-                .addClassLoader(this.getClass().getClassLoader())
+                .addClassLoader(getClassLoader() != null ? getClassLoader() : getClass().getClassLoader())
                 .enableAllInfo();
     }
 
+    protected ClassGraph getClassPathScanner() {
+        return LOG.isDebugEnabled() ? createDebugClassPathScanner() : createClassPathScanner();
+    }
 
+    public int getNumThreadScan() {
+        return numThreadScan;
+    }
+
+    public void setNumThreadScan(int numThreadScan) {
+        this.numThreadScan = numThreadScan;
+    }
+
+    public Class<?> getModuleConfig() {
+        return moduleConfig;
+    }
+
+    public void setModuleConfig(Class<?> moduleConfig) {
+        this.moduleConfig = moduleConfig;
+    }
 }
