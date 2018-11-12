@@ -11,13 +11,21 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-
-    <dependencies>
-
-    </dependencies>
-
-    <artifactId>fxee-osgi-extender</artifactId>
+    <artifactId>fxee-osgi-spring-support</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <forkMode>never</forkMode>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

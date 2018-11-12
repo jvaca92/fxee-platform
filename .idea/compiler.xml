@@ -6,13 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fxee-context-whiteboard-extender" />
         <module name="fxee-karaf-features" />
+        <module name="fxee-module-component-core" />
+        <module name="fxee-osgi-server" />
         <module name="fxee-osgi-spring-support" />
         <module name="fxee-test-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="fxee-context-whiteboard-extender" target="1.8" />
       <module name="fxee-karaf-features" target="1.8" />
+      <module name="fxee-module-component-core" target="1.8" />
+      <module name="fxee-module-components-parent" target="1.8" />
+      <module name="fxee-osgi-server" target="1.8" />
       <module name="fxee-osgi-spring-support" target="1.8" />
       <module name="fxee-test-module" target="1.8" />
       <module name="parent-fxee-dev" target="1.8" />

@@ -2,7 +2,6 @@ package org.fxee.osgi.spring.annotations;
 
 
 import java.lang.annotation.*;
-import java.lang.annotation.Retention;
 
 /**
  * Annotation is used to assign instance to variable during creating application context.

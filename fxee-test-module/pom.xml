@@ -25,7 +25,7 @@
                 <configuration>
                     <instructions>
                         <_noee>true</_noee>
-                        <Bundle-Activator>org.fxee.test.ModuleBundleActivator</Bundle-Activator>
+                        <Bundle-Activator>org.fxee.osgi.spring.test.ModuleBundleActivator</Bundle-Activator>
                         <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
                         <Export-Package>
                             org.fxee.test,

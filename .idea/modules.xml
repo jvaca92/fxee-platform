@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/fxee-context-whiteboard-extender/fxee-context-whiteboard-extender.iml" filepath="$PROJECT_DIR$/fxee-context-whiteboard-extender/fxee-context-whiteboard-extender.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" filepath="$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/fxee-module-component-core.iml" filepath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/fxee-module-component-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-module-components-parent/fxee-module-components-parent.iml" filepath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-components-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" filepath="$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-osgi-spring-support/fxee-osgi-spring-support.iml" filepath="$PROJECT_DIR$/fxee-osgi-spring-support/fxee-osgi-spring-support.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" filepath="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent-fxee-dev.iml" filepath="$PROJECT_DIR$/parent-fxee-dev.iml" />

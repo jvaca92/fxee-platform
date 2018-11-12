@@ -1,0 +1,8 @@
+org\fxee\osgi\spring\test\components\TestComponent2.class
+org\fxee\osgi\spring\test\TestModuleConfigBeans$ContextConfiguration.class
+org\fxee\osgi\spring\test\components\TestComponent1.class
+org\fxee\osgi\spring\test\beans\TestBean2.class
+org\fxee\osgi\spring\test\config\TestModuleConfig.class
+org\fxee\osgi\spring\test\beans\TestBean1.class
+org\fxee\osgi\spring\test\OsgiAnnotationConfigApplicationContextTest.class
+org\fxee\osgi\spring\test\TestModuleConfigBeans.class

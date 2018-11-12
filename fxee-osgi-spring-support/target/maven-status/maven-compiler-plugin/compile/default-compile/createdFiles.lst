@@ -1,3 +1,6 @@
-org/fxee/osgi/annotations/ExtensionImport.class
-org/fxee/osgi/annotations/ExposeAsService.class
-org/fxee/osgi/bundle/OsgiComponentBeanFactoryPostProcessor.class
+org\fxee\osgi\spring\annotations\OsgiComponentScan.class
+org\fxee\osgi\spring\context\OsgiAnnotationConfigApplicationContext.class
+org\fxee\osgi\spring\annotations\ComponentImport.class
+org\fxee\osgi\spring\annotations\ExposeAsService.class
+org\fxee\osgi\spring\annotations\Module.class
+org\fxee\osgi\spring\processors\OsgiComponentBeanFactoryPostProcessor.class
