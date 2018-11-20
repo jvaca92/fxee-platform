@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.fxee.osgi.spring.test.TestModuleConfigBeans" time="0.203" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.fxee.osgi.spring.test.TestModuleConfigBeans" time="0.172" tests="2" errors="0" skipped="0" failures="0">
   <properties/>
-  <testcase name="testTestBean1" classname="org.fxee.osgi.spring.test.TestModuleConfigBeans" time="0"/>
+  <testcase name="testTestBean1" classname="org.fxee.osgi.spring.test.TestModuleConfigBeans" time="0.016"/>
   <testcase name="testTestBean2" classname="org.fxee.osgi.spring.test.TestModuleConfigBeans" time="0"/>
 </testsuite>

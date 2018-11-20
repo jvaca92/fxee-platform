@@ -1,7 +1,7 @@
 package org.fxee.osgi.spring.test;
 
 
-import org.fxee.osgi.spring.annotations.Module;
+import org.fxee.osgi.plugin.annotations.Plugin;
 import org.fxee.osgi.spring.test.beans.TestBean1;
 import org.fxee.osgi.spring.test.beans.TestBean2;
 import org.junit.Assert;
@@ -15,9 +15,9 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(loader= AnnotationConfigContextLoader.class)
-public class TestModuleConfigBeans {
+public class TestPluginConfigBeans {
 
-    @Module(name = "test-module")
+    @Plugin(key = "test-module-key", name = "test-module")
     static class ContextConfiguration {
 
         @Bean

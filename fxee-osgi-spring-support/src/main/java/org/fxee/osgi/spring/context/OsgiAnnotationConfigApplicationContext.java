@@ -1,49 +1,60 @@
 package org.fxee.osgi.spring.context;
 
-import io.github.classgraph.ClassGraph;
-import org.fxee.osgi.spring.annotations.OsgiComponentScan;
+import org.fxee.osgi.spring.annotations.ExposeAsService;
+import org.fxee.osgi.utils.OsgiUtils;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.core.type.StandardMethodMetadata;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+import java.util.stream.Stream;
 
-public  class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWebApplicationContext {
+
+public class OsgiAnnotationConfigApplicationContext extends AnnotationConfigApplicationContext implements Exposable {
 
     private static final Logger LOG = LoggerFactory.getLogger(OsgiAnnotationConfigApplicationContext.class);
 
+    /**
+     * All registered osgi components as services
+     */
+    private List<ServiceRegistration> serviceRegistrations = new ArrayList<ServiceRegistration>();
 
     /**
-     * Constant module key as property during service registration
+     * Osgi bundle context
      */
-    public static final String MODULE_KEY = "module.key";
-    /**
-     *  Constant module name as property during service registration
-     */
-    public static final String MODULE_NAME = "module.name";
+    private BundleContext bundleContext;
 
     /**
-     * Default count of threads for scanning classpath
+     * Config module class. Should be annotated by {@see Plugin }
      */
-    private static final int DEFAULT_NUM_THREAD_SCAN = 2;
+    private Class<?> pluginConfig;
 
     /**
-     * Specify number of threads for classpath scanner (default 2)
+     * Instance of osgi scanner
      */
-    private int numThreadScan = DEFAULT_NUM_THREAD_SCAN;
+    private OsgiClassPathScanner scanner;
 
-    /**
-     * Config module class. Should be annotated by {@see Module }
-     */
-    private Class<?> moduleConfig;
-
-    public OsgiAnnotationConfigApplicationContext(Class<?> moduleConfig) {
-        this.moduleConfig = moduleConfig;
-        this.register(moduleConfig);
+    public OsgiAnnotationConfigApplicationContext(BundleContext bundleContext) {
+        this.scanner = createOsgiClassPathScanner();
+        this.bundleContext = bundleContext;
+        register(pluginConfig);
     }
+
+
+    public OsgiAnnotationConfigApplicationContext(BundleContext bundleContext, Class<?> pluginConfig) {
+        this.scanner = createOsgiClassPathScanner();
+        this.pluginConfig = pluginConfig;
+        this.bundleContext = bundleContext;
+        register(pluginConfig);
+    }
+
+
 
     /***
      * Will be taken all defined base packages if exist. If not then will be taken all base packages from config module
@@ -52,133 +63,74 @@ public  class OsgiAnnotationConfigApplicationContext extends AnnotationConfigWeb
      * @param basePackages array of base packages
      */
     public void scanOsgiBasePackages(String[] basePackages) {
-        LOG.debug("Starting scanning base packages");
+        LOG.debug("Starting scan base packages");
         if(basePackages != null && basePackages.length != 0) {
-            doScanOsgiComponent(getClassPathScanner(), basePackages);
+            doScanOsgiComponents(basePackages);
             LOG.debug("All packages were scanned and found classes were registered into application context");
         }
     }
 
     /**
-     *  Will be taken module config class and then extract base packages defined by {@see OsgiComponentScan}
-     *  if exist
-     * @param classpathScanner - classpath scanner
-     */
-    protected void doScanAnnotatedOsgiComponent(ClassGraph classpathScanner) {
-        LOG.debug("Starting scan base packages defined by annotation @OsgiComponentScan");
-        if(moduleConfig != null) {
-            if(moduleConfig.isAnnotationPresent(OsgiComponentScan.class)) {
-                LOG.debug("Was found annotation @OsgiComponentScan in module class {}", moduleConfig.getName());
-                OsgiComponentScan osgiComponentScan = moduleConfig.getAnnotation(OsgiComponentScan.class);
-                List<String> basePackages = new ArrayList<>(Arrays.asList(osgiComponentScan.basePackages()));
-                Collections.addAll(basePackages, osgiComponentScan.basePackage());
-
-                if(basePackages.size() != 0) {
-                    doScanOsgiComponent(classpathScanner, basePackages.toArray(new String[basePackages.size()]));
-                }
-                LOG.debug("Stopping scan base packages defined by annotation @OsgiComponentScan");
-            }
-        } else {
-            LOG.error("Module config class is not defined");
-            throw new NullPointerException("Module config class is not defined");
-        }
-
-    }
-
-    /**
      * Will scan each base package by scanner
-     * @param classpathScanner - classpath scanner
      * @param basePackages - array of base packages
      */
-    protected void doScanOsgiComponent(ClassGraph classpathScanner, String[] basePackages) {
+    protected void doScanOsgiComponents(String[] basePackages) {
         LOG.debug("Starting scan of base packages: {}", basePackages.toString());
-        classpathScanner.whitelistPackages(basePackages)
-                .scan(numThreadScan)
-                .getAllClasses()
-                .getStandardClasses()
-                .loadClasses()
-                .forEach(
-                        clazz -> {
-                            register(clazz);
-                            LOG.debug("The class {} was registered");
-                        }
-                );
+        scanner.scanOsgiComponents(basePackages).forEach(
+                clazz -> {
+                    register(clazz);
+                    LOG.debug("The class {} was registered");
+                }
+        );
         LOG.debug("Stopping scan of base packages: {}", basePackages.toString());
     }
 
-
-    protected void loadBeanDefinitions(DefaultListableBeanFactory beanFactory) {
-        doScanAnnotatedOsgiComponent(getClassPathScanner());
-        super.loadBeanDefinitions(beanFactory);
-    }
-
     /**
-     * Return new instance of {@link ClassGraph}
-     * @return new instance
+     *  Get all objects which are annotated by {@link Repository}
+     * @return - collection of repositories
      */
-    protected ClassGraph createClassPathScanner() {
-        return new ClassGraph()
-                .addClassLoader(this.getClass().getClassLoader())
-                .enableAllInfo();
+    public Collection<Object> getRepositories() {
+        return  getBeansWithAnnotation(Repository.class).values();
     }
 
-
-    /***
-     * Get all objects which are annotated by {@link Controller}
-     * @return - collection of controllers
-     */
-    public Collection<Object> getControllers() {
-        return getBeansWithAnnotation(Controller.class).values();
+    @Override
+    public void exposeServices() {
+        LOG.debug("Starting exposing osgi components or beans as service");
+        Stream.of(this.getBeanDefinitionNames()).forEach(beanDefinitionName -> {
+            BeanDefinition beanDefinition = this.getBeanDefinition(beanDefinitionName);
+            Object beanInstance = this.getBean(beanDefinitionName);
+            /** First process class if is marked by annotation @ExposeAsService **/
+            if(beanInstance.getClass().isAnnotationPresent(ExposeAsService.class)) {
+                OsgiUtils.doExposeComponentAsService(bundleContext, serviceRegistrations, beanInstance);
+                LOG.debug("Expose component {} as service", beanInstance.getClass().getName());
+            }
+            /** Further process beans in config class if are marked by annotation @ExposeAsService **/
+            else if (beanDefinition.getSource() instanceof StandardMethodMetadata) {
+                StandardMethodMetadata methodMetadata = (StandardMethodMetadata) beanDefinition.getSource();
+                if (methodMetadata.isAnnotated(ExposeAsService.class.getCanonicalName())) {
+                    OsgiUtils.doExposeBeanAsService(bundleContext, serviceRegistrations, methodMetadata, beanInstance);
+                    LOG.debug("Expose component {} as service", beanInstance.getClass().getName());
+                }
+            }
+        });
+        LOG.debug("Stopping exposing osgi components or beans as service");
     }
 
-
-    /***
-     * Get all objects which are annotated by {@link org.springframework.web.bind.annotation.RestController}
-     * @return - collection of rest controllers
-     */
-    public Collection<Object> getRestControllers() {
-        return getBeansWithAnnotation(RestController.class ).values();
+    @Override
+    public void disposeServices() {
+        serviceRegistrations.forEach(serviceRegistration -> serviceRegistration.unregister());
     }
 
-
-    /***
-     * Get all objects which are annotated by {@link Controller} or {@link RestController}
-     * @return - collection of controllers
-     */
-    public Collection<Object> getAllControllers() {
-        Collection controllers = getControllers();
-        Collections.addAll(controllers, getRestControllers());
-        return controllers;
+    @Override
+    public void close() {
+        disposeServices();
+        super.close();
     }
 
-    /**
-     * Return new instance of {@link ClassGraph} with debug mode
-     * @return new instance
-     */
-    protected ClassGraph createDebugClassPathScanner() {
-        return new ClassGraph()
-                .verbose()
-                .addClassLoader(getClassLoader() != null ? getClassLoader() : getClass().getClassLoader())
-                .enableAllInfo();
+    protected OsgiClassPathScanner createOsgiClassPathScanner() { return new OsgiClassPathScanner(); }
+
+    protected void registerOsgiBeanFactoryPostProcessors() {
+        this.addBeanFactoryPostProcessor(new OsgiComponentBeanFactoryPostProcessor(bundleContext));
     }
 
-    protected ClassGraph getClassPathScanner() {
-        return LOG.isDebugEnabled() ? createDebugClassPathScanner() : createClassPathScanner();
-    }
-
-    public int getNumThreadScan() {
-        return numThreadScan;
-    }
-
-    public void setNumThreadScan(int numThreadScan) {
-        this.numThreadScan = numThreadScan;
-    }
-
-    public Class<?> getModuleConfig() {
-        return moduleConfig;
-    }
-
-    public void setModuleConfig(Class<?> moduleConfig) {
-        this.moduleConfig = moduleConfig;
-    }
 }

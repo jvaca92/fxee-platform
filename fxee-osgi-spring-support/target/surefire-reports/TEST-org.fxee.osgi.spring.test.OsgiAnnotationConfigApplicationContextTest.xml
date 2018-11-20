@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="1.045" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="1.899" tests="4" errors="0" skipped="0" failures="0">
   <properties/>
-  <testcase name="doScanAnnotatedOsgiComponent" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="0.755"/>
-  <testcase name="scanOsgiBasePackages" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="0.29"/>
+  <testcase name="osgiComponentBeanFactoryPostProcessorTest" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="1.057"/>
+  <testcase name="scanOsgiComponents" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="0.284"/>
+  <testcase name="doScanAnnotatedOsgiComponent" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="0.219"/>
+  <testcase name="scanOsgiWebCompnents" classname="org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest" time="0.322"/>
 </testsuite>

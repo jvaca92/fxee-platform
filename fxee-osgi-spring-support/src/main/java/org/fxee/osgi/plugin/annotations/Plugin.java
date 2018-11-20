@@ -1,4 +1,4 @@
-package org.fxee.osgi.spring.annotations;
+package org.fxee.osgi.plugin.annotations;
 
 
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 @Retention(value= RetentionPolicy.RUNTIME)
 @Target(value=ElementType.TYPE)
 @Configuration
-public @interface Module {
+public @interface Plugin {
 
     String name();
 

@@ -10,6 +10,6 @@ import java.lang.annotation.*;
  */
 @Documented
 @Retention(value= RetentionPolicy.RUNTIME)
-@Target(value= {ElementType.FIELD, ElementType.PARAMETER})
+@Target(value= {ElementType.FIELD, ElementType.PARAMETER, ElementType.CONSTRUCTOR})
 public @interface ComponentImport {
 }

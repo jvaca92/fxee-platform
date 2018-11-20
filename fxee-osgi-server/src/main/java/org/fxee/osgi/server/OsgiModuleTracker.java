@@ -1,8 +1,8 @@
 package org.fxee.osgi.server;
 
-import org.fxee.osgi.spring.annotations.Module;
-import org.fxee.osgi.spring.context.OsgiAnnotationConfigApplicationContext;
-import org.fxee.osgi.spring.context.OsgiAnnotationConfigApplicationContextFactory;
+import org.fxee.osgi.plugin.annotations.Plugin;
+import org.fxee.osgi.spring.context.OsgiAnnotationConfigWebApplicationContext;
+import org.fxee.osgi.spring.context.OsgiApplicationContextFactory;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleEvent;
@@ -28,12 +28,12 @@ public class OsgiModuleTracker extends BundleTracker {
     /**
      * The attribute name for FXee module in manifest
      */
-    private static final String MANIFEST_ATTRIBUTE_FXEE_MODULE_NAME = "Fxee-Module";
+    private static final String MANIFEST_ATTRIBUTE_FXEE_MODULE_NAME = "Fxee-Plugin";
 
     /**
      * The attribute name for module config class in manifest
      */
-    private static final String MANIFEST_ATTRIBUTE_MODULE_CONFIG_NAME = "Module-Configuration";
+    private static final String MANIFEST_ATTRIBUTE_MODULE_CONFIG_NAME = "Plugin-Configuration";
 
 
     @Override
@@ -47,19 +47,19 @@ public class OsgiModuleTracker extends BundleTracker {
                 Class<?> moduleConfigClass;
                 try {
                     moduleConfigClass = bundle.loadClass(moduleConfigClassName);
-                    LOG.debug("Module config class {} was loaded", moduleConfigClassName);
-                    //Further check if class is annotated by annotation Module
-                    if(moduleConfigClass.isAnnotationPresent(Module.class)) {
+                    LOG.debug("Plugin config class {} was loaded", moduleConfigClassName);
+                    //Further check if class is annotated by annotation Plugin
+                    if(moduleConfigClass.isAnnotationPresent(Plugin.class)) {
                         LOG.debug("Starting registering Osgi application context");
                         BundleContext bundleContext = bundle.getBundleContext();
-                        OsgiAnnotationConfigApplicationContextFactory factory = new OsgiAnnotationConfigApplicationContextFactory();
-                        OsgiAnnotationConfigApplicationContext applicationContext = factory.createApplicationContext(bundleContext, moduleConfigClass);
+                        OsgiApplicationContextFactory factory = new OsgiApplicationContextFactory();
+                        OsgiAnnotationConfigWebApplicationContext applicationContext = factory.createApplicationContext(bundleContext, moduleConfigClass);
                         Dictionary applicationContextMetadata = factory.createApplicationContextMetadata(moduleConfigClass);
                         //Finally register as service
-                        bundleContext.registerService(OsgiAnnotationConfigApplicationContext.class, applicationContext, applicationContextMetadata);
+                        bundleContext.registerService(OsgiAnnotationConfigWebApplicationContext.class, applicationContext, applicationContextMetadata);
                         LOG.debug("Osgi application context was registered as service");
                     } else {
-                        LOG.warn("The module config class {} cannot be processed because is annotated by annotation Module", moduleConfigClassName);
+                        LOG.warn("The module config class {} cannot be processed because is not annotated by annotation Plugin", moduleConfigClassName);
                     }
                 } catch (ClassNotFoundException e) {
                     LOG.error("The module config class {} cannot be found: ", moduleConfigClassName, e);
