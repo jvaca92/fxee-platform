@@ -12,7 +12,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.util.tracker:1.5.2" level="project" />
-    <orderEntry type="module" module-name="fxee-osgi-spring-support" />
+    <orderEntry type="module" module-name="fxee-osgi-core" />
+    <orderEntry type="module" module-name="org-fxee-osgi-api" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-context:5.0.8.RELEASE_1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-core:5.0.8.RELEASE_1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.springframework:spring-jcl:5.0.8.RELEASE" level="project" />

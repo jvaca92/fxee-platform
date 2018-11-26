@@ -22,12 +22,12 @@
     </properties>
     <!-- Modules -->
     <modules>
-        <module>fxee-osgi-spring-support</module>
+        <module>fxee-osgi-core</module>
         <module>fxee-test-module</module>
         <module>fxee-karaf-features</module>
         <module>fxee-osgi-server</module>
-        <module>fxee-module-components-parent</module>
-        <module>fxee-context-whiteboard-extender</module>
+        <module>fxee-plugin-modules-parent</module>
+        <module>org-fxee-osgi-api</module>
     </modules>
 
     <dependencies>

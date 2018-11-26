@@ -2,49 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8ac01ff-ea8a-469e-8f99-945bd0d6cc59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/PluginKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentImportFieldCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/Exposable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiClassPathScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiNoneWebComponentFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestServiceConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AbstractPluginContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AnnotationPluginContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AnnotationWebPluginContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextLifecycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/utils/OsgiUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/DefaultExposeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/components/ExposeComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/context/OsgiClassPathScanner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/fxee-plugin-module-component-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/src/main/java/org/fxee/plugin/module/component/api/ComponentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/fxee-plugin-module-component-whiteboard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentModuleActivator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentModuleKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/DefaultComponentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/fxee-plugin-module-rest-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/src/main/java/org/fxee/plugin/module/rest/api/RestModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/fxee-plugin-module-rest-whiteboard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-fxee-osgi-api/org-fxee-osgi-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/EnableModules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ComponentImport.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ComponentImport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/annotations/Plugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiApplicationContextFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiExposeServiceBeanFactoryPostProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestModuleConfigBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/ComponentImport.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/ComponentImport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/Module.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/processors/OsgiComponentBeanFactoryPostProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.TestModuleConfigBeans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.TestModuleConfigBeans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.TestModuleConfigBeans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.TestModuleConfigBeans.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/TestModuleConfigBeans$ContextConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/TestModuleConfigBeans.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent1.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent2.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/config/TestModuleConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/config/TestModuleConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-context-whiteboard-extender/fxee-context-whiteboard-extender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-modules-parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-context-whiteboard-extender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org-fxee-osgi-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/fxee-module-component-core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-components-parent.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-module-components-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-plugin-modules-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleServerActivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginServerActivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/fxee-osgi-spring-support.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/fxee-osgi-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/PluginKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/annotations/Plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/Plugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ComponentImport.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/ComponentImport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ExposeAsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/ExposeAsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/OsgiComponentScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/OsgiComponentScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentImportFieldCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/ComponentImportFieldCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/ComponentKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/Exposable.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/Exposable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiApplicationContextFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiClassPathScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/OsgiClassPathScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/OsgiComponentBeanFactoryPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiNoneWebComponentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/OsgiNoneWebComponentFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/beans/TestBean1.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/TestBean1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/beans/TestBean2.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/TestBean2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/controllers/TestRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestServiceConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/services/TestServiceConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/plugin/AbstractPluginMetadata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/ComponentImport.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/annotations/ComponentImport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/ExposeAsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/annotations/ExposeAsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/OsgiComponentScan.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/annotations/OsgiComponentScan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/annotations/Plugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/ComponentImportFieldCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/spring/context/ComponentImportFieldCallback.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiApplicationContextFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiClassPathScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiComponentFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/spring/context/OsgiExposeServiceBeanFactoryPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/classes/org/fxee/osgi/utils/OsgiUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/classes/org/fxee/osgi/utils/OsgiUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.TestModuleConfigBeans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/surefire-reports/TEST-org.fxee.osgi.spring.test.TestModuleConfigBeans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/TEST-org.fxee.osgi.spring.test.TestPluginConfigBeans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.OsgiAnnotationConfigApplicationContextTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.TestModuleConfigBeans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/surefire-reports/org.fxee.osgi.spring.test.TestModuleConfigBeans.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/surefire-reports/org.fxee.osgi.spring.test.TestPluginConfigBeans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/TestPluginConfigBeans$ContextConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/TestPluginConfigBeans.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/beans/TestBean1.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/test-classes/org/fxee/osgi/spring/test/beans/TestBean1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/beans/TestBean2.class" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-osgi-core/target/test-classes/org/fxee/osgi/spring/test/beans/TestBean2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/components/TestComponent2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/config/TestModuleConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/controllers/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/controllers/TestRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/services/TestService1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-osgi-spring-support/target/test-classes/org/fxee/osgi/spring/test/services/TestServiceConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/classes/org/fxee/test/ModuleBundleActivator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/classes/org/fxee/test/ModuleConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/classes/org/fxee/test/context/OsgiAnnotationWebApplicationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/classes/org/fxee/test/controllers/ModuleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/classes/org/fxee/test/services/ModuleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fxee-test-module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/fxee-test-module/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/fxee-test-module/target/" />
@@ -56,47 +136,145 @@
     <ignored path="$PROJECT_DIR$/fxee-context-whiteboard-extender/target/" />
     <ignored path="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/target/" />
     <ignored path="$PROJECT_DIR$/fxee-module-components-parent/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-module-component-core/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-osgi-core/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/target/" />
+    <ignored path="$PROJECT_DIR$/org-fxee-osgi-api/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/target/" />
+    <ignored path="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginTracker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginCustomizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginServerActivator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/Plugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleKeys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AnnotationPluginContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java">
+        <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+            <state relative-caret-position="-453">
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#665#686#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="152" column="34" lean-forward="true" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1152#1173#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
+                <element signature="e#2243#2244#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,10 +285,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -119,10 +297,15 @@
       <find>&lt;version&gt;5.0.8.RELEASE_1&lt;/version&gt;</find>
       <find>ModuleVon</find>
       <find>moduleConfig</find>
+      <find>getBean</find>
+      <find>doExposeBeanAsService</find>
+      <find>osgiModuleTracker</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;version&gt;${spring.version}&lt;/version&gt;</replace>
       <replace>pluginConfig</replace>
+      <replace>getComponent</replace>
+      <replace>pluginTracker</replace>
     </replaceStrings>
     <dirStrings>
       <dir>I:\fxee-platform-dev\fxee-osgi-spring-support\src\main\java\org\fxee\osgi\plugin\Annotation</dir>
@@ -134,57 +317,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fxee-osgi-support/src/main/java/org/fxee/osgi/annotations/OsgiComponentScan.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/AbstractOsgiAnnotationApplicationContext.java" />
-        <option value="$PROJECT_DIR$/fxee-test-module/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/OsgiComponentScan.java" />
-        <option value="$PROJECT_DIR$/fxee-test-module/src/main/java/org/fxee/test/ModuleBundleActivator.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-extender/src/test/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContextTest.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/beans/TestBean2.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/AbstractOsgiAnnotationConfigApplicationContext.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/BundleTrackerCustomizer.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-server/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/Module.java" />
-        <option value="$PROJECT_DIR$/fxee-module-components-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-context-whiteboard-extender/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTrackerCustomizer.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/AnnotationPluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/ExposeBean.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/DefaultExposeBean.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/annotations/Plugin.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/AnnotationWebPluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/PluginModuleResolver.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTracker.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestModuleConfig.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestModuleConfigBeans.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/utils/FieldCallbackUtils.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContextFactory.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleServerActivator.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/AbstractPluginMetadata.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestController2.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/RestController.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestController.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiClassPathScanner.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentFilter.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ComponentImport.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentImportFieldCallback.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestServiceConstructor.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/ComponentKeys.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ExposeAsService.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiExposeServiceBeanFactoryPostProcessor.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/IExpose.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/Exposable.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiNoneWebComponentFilter.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/ComponentKeys.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/PluginKeys.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentKeys.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiApplicationContextFactory.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.java" />
-        <option value="$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/src/main/java/org/fxee/plugin/module/rest/api/RestModule.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiPluginTracker.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginContextLifecycle.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginContextInfo.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginContextInfo.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginManager.java" />
+        <option value="$PROJECT_DIR$/org-fxee-osgi-api/pom.xml" />
+        <option value="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/Plugin.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginManager.java" />
+        <option value="$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/EnableModules.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiPluginCustomizer.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/PluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/AbstractPluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AbstractPluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ModuleComponentActivator.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentTracker.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginKeys.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleKeys.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/pom.xml" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentModuleKeys.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentFilter.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentTrackerCustomizer.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/src/main/java/org/fxee/plugin/module/component/api/ComponentManager.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextInfo.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContext.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginInfo.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModule.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginModule.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginFactory.java" />
+        <option value="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/DefaultComponentManager.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginServerActivator.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleResolver.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextFactory.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginTracker.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/Plugin.java" />
+        <option value="$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPlugin.java" />
       </list>
     </option>
   </component>
@@ -193,11 +376,17 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="474" />
-    <option name="y" value="-1156" />
-    <option name="width" value="822" />
-    <option name="height" value="687" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,124 +408,47 @@
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osgi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="osgi" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
+              <item name="fxee-osgi-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="osgi" type="462c0819:PsiDirectoryNode" />
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osgi" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osgi" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osgi" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="osgi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fxee-platform-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fxee-platform-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="fxee-osgi-spring-support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,7 +459,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542701506771" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543190613813" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -368,11 +480,12 @@
       <recent name="org.fxee.osgi.spring.context" />
       <recent name="org.fxee.test" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.fxee.osgi.plugin" />
+      <recent name="org.fxee.test.context" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.fxee.test.context" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\fxee-platform-dev\fxee-osgi-spring-support\src" />
@@ -392,7 +505,7 @@
   </component>
   <component name="RunManager" selected="Remote.Maven debugger">
     <configuration name="OsgiAnnotationConfigApplicationContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxee-osgi-spring-support" />
+      <module name="fxee-osgi-core" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.fxee.osgi.spring.test.beans.*" />
@@ -419,6 +532,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="fxee-plugin-modules-parent" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="fxee-plugin-modules-parent" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Karaf Remote Debug" type="Remote">
       <module name="fxee-test-module" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -434,7 +594,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Maven debugger" type="Remote">
-      <module name="fxee-osgi-spring-support" />
+      <module name="fxee-osgi-core" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" />
@@ -480,7 +640,7 @@
       <workItem from="1541333967306" duration="12472000" />
       <workItem from="1541403622730" duration="77000" />
       <workItem from="1541403771117" duration="5217000" />
-      <workItem from="1542568062329" duration="15605000" />
+      <workItem from="1542568062329" duration="74035000" />
     </task>
     <servers />
   </component>
@@ -517,13 +677,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190043000" />
+    <option name="totallyTimeSpent" value="248473000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1208" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2468017" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22834007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.15384616" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,7 +692,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32865733" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.7876448" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49599198" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31763527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -547,17 +706,17 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4307036" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23987207" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.15384616" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -565,8 +724,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32865733" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.78857714" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28757516" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7876448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31763527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -580,13 +739,13 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,28 +767,22 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java</url>
+          <url>file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/utils/OsgiUtils.java</url>
           <line>2</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AbstractPluginContext.java</url>
+          <line>91</line>
           <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentImportFieldCallback.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="75" />
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -639,423 +792,452 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/JUnit4ClassRunner.class">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/beans/DefaultExposeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="184">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#1650#1783#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-test-module/pom.xml">
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/OsgiComponentScan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        <state relative-caret-position="322">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/MethodRoadie.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="154">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/TestMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AnnotationWebPluginContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/spring/context/PluginModuleResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fxee-osgi-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="529">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-module-components-parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="437">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/src/main/java/org/fxee/plugin/module/rest/api/RestModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="69">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTrackerCustomizer.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="179" column="37" selection-start-line="179" selection-start-column="21" selection-end-line="179" selection-end-column="37" />
+        <state relative-caret-position="161">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-context-whiteboard-extender/pom.xml">
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/OsgiModuleServerActivator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/classgraph/classgraph/4.4.12/classgraph-4.4.12.jar!/io/github/classgraph/InfoList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/classgraph/classgraph/4.4.12/classgraph-4.4.12.jar!/io/github/classgraph/ClassInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="564" selection-start-line="564" selection-end-line="564" />
-          <folding>
-            <element signature="e#23849#23850#0" expanded="true" />
-            <element signature="e#57323#57324#0" expanded="true" />
-            <element signature="e#57391#57392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/classgraph/classgraph/4.4.12/classgraph-4.4.12.jar!/io/github/classgraph/ClassInfoList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiClassPathScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3097#3098#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/controllers/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/TestPluginConfigBeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/utils/FieldCallbackUtils.java" />
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ComponentImport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-core/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-core-5.0.8.RELEASE_1.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/karaf/org.apache.karaf.client/4.2.1/org.apache.karaf.client-4.2.1.jar!/org/slf4j/impl/SimpleLogger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#1772#1773#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-core/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-core-5.0.8.RELEASE_1.jar!/org/springframework/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="445" selection-start-line="445" selection-end-line="445" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/TestMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/MethodRoadie.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
-          <folding>
-            <element signature="e#3053#3176#0" expanded="true" />
-            <element signature="e#3175#3176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-context/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-context-5.0.8.RELEASE_1.jar!/org/springframework/context/support/AbstractApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="271" selection-start-line="271" selection-end-line="271" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.spring-context/5.0.8.RELEASE_1/org.apache.servicemix.bundles.spring-context-5.0.8.RELEASE_1.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestService1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/services/TestServiceConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/beans/TestBean1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/beans/TestBean2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/config/TestPluginConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/components/TestComponent2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/annotations/ExposeAsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/test/java/org/fxee/osgi/spring/test/OsgiAnnotationConfigApplicationContextTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/ComponentKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/AbstractPluginMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiNoneWebComponentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiExposeServiceBeanFactoryPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiComponentBeanFactoryPostProcessor.java">
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="44" column="66" lean-forward="true" selection-start-line="43" selection-start-column="65" selection-end-line="44" selection-end-column="66" />
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/ComponentImportFieldCallback.java">
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/ComponentImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/ExposeAsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org-fxee-osgi-api/src/main/java/org/fxee/osgi/api/annotations/EnableModules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentModuleActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentModuleKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="64" lean-forward="true" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentTrackerCustomizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/ComponentTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/src/main/java/org/fxee/plugin/module/component/api/ComponentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/DefaultPluginContextInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextLifecycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AbstractPluginContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7274#7275#0" expanded="true" />
+            <element signature="e#7301#7302#0" expanded="true" />
+            <element signature="e#7356#7357#0" expanded="true" />
+            <element signature="e#7383#7384#0" expanded="true" />
+            <element signature="e#7693#7694#0" expanded="true" />
+            <element signature="e#7720#7721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/src/main/java/org/fxee/plugin/module/component/whiteboard/DefaultComponentManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/annotations/Plugin.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginCustomizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/plugin/PluginKeys.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginServerActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleKeys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiApplicationContextFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="40" column="112" selection-start-line="40" selection-start-column="112" selection-end-line="40" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/Exposable.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/PluginModuleResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/Base.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/AnnotationPluginContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/context/PluginContextFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/utils/OsgiUtils.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-server/src/main/java/org/fxee/osgi/server/PluginTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigWebApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="152" column="34" lean-forward="true" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
+        <state relative-caret-position="405">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1152#1173#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fxee-osgi-spring-support/src/main/java/org/fxee/osgi/spring/context/OsgiAnnotationConfigApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/fxee-osgi-core/src/main/java/org/fxee/osgi/plugin/DefaultPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        <state relative-caret-position="-453">
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#665#686#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>

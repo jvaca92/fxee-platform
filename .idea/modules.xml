@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fxee-context-whiteboard-extender/fxee-context-whiteboard-extender.iml" filepath="$PROJECT_DIR$/fxee-context-whiteboard-extender/fxee-context-whiteboard-extender.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" filepath="$PROJECT_DIR$/fxee-karaf-features/fxee-karaf-features.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/fxee-module-component-core.iml" filepath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-component-core/fxee-module-component-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fxee-module-components-parent/fxee-module-components-parent.iml" filepath="$PROJECT_DIR$/fxee-module-components-parent/fxee-module-components-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-osgi-core/fxee-osgi-core.iml" filepath="$PROJECT_DIR$/fxee-osgi-core/fxee-osgi-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" filepath="$PROJECT_DIR$/fxee-osgi-server/fxee-osgi-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fxee-osgi-spring-support/fxee-osgi-spring-support.iml" filepath="$PROJECT_DIR$/fxee-osgi-spring-support/fxee-osgi-spring-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/fxee-plugin-module-component-api.iml" filepath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-api/fxee-plugin-module-component-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/fxee-plugin-module-component-whiteboard.iml" filepath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-component-whiteboard/fxee-plugin-module-component-whiteboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/fxee-plugin-module-rest-api.iml" filepath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-api/fxee-plugin-module-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/fxee-plugin-module-rest-whiteboard.iml" filepath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-module-rest-whiteboard/fxee-plugin-module-rest-whiteboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-modules-parent.iml" filepath="$PROJECT_DIR$/fxee-plugin-modules-parent/fxee-plugin-modules-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" filepath="$PROJECT_DIR$/fxee-test-module/fxee-test-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org-fxee-osgi-api/org-fxee-osgi-api.iml" filepath="$PROJECT_DIR$/org-fxee-osgi-api/org-fxee-osgi-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent-fxee-dev.iml" filepath="$PROJECT_DIR$/parent-fxee-dev.iml" />
     </modules>
   </component>

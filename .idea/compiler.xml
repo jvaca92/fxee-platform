@@ -6,22 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fxee-context-whiteboard-extender" />
         <module name="fxee-karaf-features" />
-        <module name="fxee-module-component-core" />
+        <module name="fxee-osgi-core" />
         <module name="fxee-osgi-server" />
-        <module name="fxee-osgi-spring-support" />
+        <module name="fxee-plugin-module-component-api" />
+        <module name="fxee-plugin-module-component-whiteboard" />
+        <module name="fxee-plugin-module-rest-api" />
+        <module name="fxee-plugin-module-rest-whiteboard" />
         <module name="fxee-test-module" />
+        <module name="org-fxee-osgi-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fxee-context-whiteboard-extender" target="1.8" />
       <module name="fxee-karaf-features" target="1.8" />
       <module name="fxee-module-component-core" target="1.8" />
-      <module name="fxee-module-components-parent" target="1.8" />
+      <module name="fxee-osgi-core" target="1.8" />
       <module name="fxee-osgi-server" target="1.8" />
-      <module name="fxee-osgi-spring-support" target="1.8" />
+      <module name="fxee-plugin-module-component-api" target="1.8" />
+      <module name="fxee-plugin-module-component-whiteboard" target="1.8" />
+      <module name="fxee-plugin-module-rest-api" target="1.5" />
+      <module name="fxee-plugin-module-rest-whiteboard" target="1.5" />
+      <module name="fxee-plugin-modules-parent" target="1.8" />
       <module name="fxee-test-module" target="1.8" />
+      <module name="org-fxee-osgi-api" target="1.8" />
       <module name="parent-fxee-dev" target="1.8" />
     </bytecodeTargetLevel>
   </component>

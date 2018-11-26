@@ -1,0 +1,14 @@
+org\fxee\osgi\spring\test\components\TestComponent2.class
+org\fxee\osgi\spring\test\config\TestPluginConfig.class
+org\fxee\osgi\spring\test\TestPluginConfigBeans$ContextConfiguration.class
+org\fxee\osgi\spring\test\services\TestServiceConstructor.class
+org\fxee\osgi\spring\test\TestPluginConfigBeans.class
+org\fxee\osgi\spring\test\services\TestService1.class
+org\fxee\osgi\spring\test\components\ExposeComponent.class
+org\fxee\osgi\spring\test\components\TestComponent1.class
+org\fxee\osgi\spring\test\controllers\TestController.class
+org\fxee\osgi\spring\test\beans\TestBean1.class
+org\fxee\osgi\spring\test\OsgiAnnotationConfigApplicationContextTest.class
+org\fxee\osgi\spring\test\controllers\TestRestController.class
+org\fxee\osgi\spring\test\beans\TestBean2.class
+org\fxee\osgi\spring\test\beans\DefaultExposeBean.class
